@@ -3,7 +3,7 @@ title: Taking on the “charities” that fund Israel’s settlers
 author: Sami Huraini
 date: 2022-07-26
 tags: ["post", "featured"]
-image: https://asset.cloudinary.com/abualex/fd1a827a4d68cfb4198c577c72ae66a0
+image: https://res.cloudinary.com/abualex/image/upload/v1674468491/Youth%20of%20Sumud/Screenshot_2023-01-23_at_12.07.17_PM.png
 imageAlt: Activist resist deportation in Masafer Yatta.  Mamoun Wazwaz | APA images
 description: The pending erasure of the Indigenous people of Masafer Yatta isn’t solely about the “occupation,” as liberal Zionists would lead you to believe. Palestinians are fighting much more than an “occupation.” We are fighting Israel’s program of settler-colonialism.
 ---
