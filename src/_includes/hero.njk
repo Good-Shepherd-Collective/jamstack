@@ -1,0 +1,214 @@
+<div class="hero-top">
+    <div class="hero-grid-1">
+        <h1 class="hero-title">We will remain</h1>
+        <h4>As our communities facing elimination, like indigenous communities everywhere, we will stay on our historical lands.</h3>
+    </div>
+    <div class="hero-grid-2">
+      <div class="video-grid-1 front-page-vid vid-one">
+        <video playsinline loading="lazy" type="video/mp4" muted class="vid front-page-vid" loop poster="https://res.cloudinary.com/abualex/image/upload/v1674468491/Youth%20of%20Sumud/Screenshot_2023-01-23_at_12.07.17_PM.png" src="https://res.cloudinary.com/abualex/video/upload/v1674466303/Youth%20of%20Sumud/Youth_of_Sumud_background_video_1.mp4">
+        </video>
+        <div class="video-text-container ">
+        <h3 class="video-font transition transition-opacity">Community Organizing</h3>
+        <p class="video-font transition transition-opacity">Protests and noncooperation have always been essential tools of native populations resisting colonialism. Palestine is no different. Youth of Sumud organizes nonviolent resistance in communities confronted with forcible displacement.</p>
+        </div>
+    </div>
+    <div class="video-grid-1 front-page-vid vid-two">
+        <video id="video-target" loading="lazy" type="video/mp4" muted class="vid front-page-vid video-font-add" loop src="https://assets.website-files.com/5ff17468919ea6609324630f/61c99b758a62bb8f7f600960_ira-transcode.mp4">
+        </video>
+        <h3 class="video-font transition transition-opacity">al Aqsa Hi hi</h3>
+        <p class="video-font transition transition-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eum. Aperiam nemo, corrupti incidunt et quaerat laborum. Magni, rerum deserunt at odio veritatis voluptatem quos eveniet minus iure temporibus delectus?</p>
+    </div>
+  </div>
+</div>
+
+<style>
+
+    
+
+</style>
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", playOnHover);
+
+function playOnHover() {
+  var videos = document.getElementsByTagName('video');
+  
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].addEventListener('touchstart', function() {
+      this.play();
+    }, { passive: true });
+    videos[i].addEventListener('touchend', function() {
+      this.pause();
+    }, { passive: true });
+    videos[i].addEventListener('mouseover', function() {
+      this.play();
+    }, { passive: true });
+    videos[i].addEventListener('mouseout', function() {
+      this.pause();
+    }, { passive: true });
+  }
+}
+
+function animateVideoText(){
+  const videoText = document.getElementsByClassName('hiddenText');
+  for (var i = 0; i < videoText.length; i++){
+    videoText[i].addEventListener('touchstart', function() {
+      videoText.classList.replace('hiddenText', 'showText');
+});
+videoText[i].addEventListener('touchend', function() {
+
+  videoText.classList.replace('hiddenText', 'showText');
+});
+videoText[i].addEventListener('mouseover', function() {
+  videoText.classList.replace('hiddenText', 'showText');
+});
+videoText[i].addEventListener('mouseout', function() {
+
+  videoText.classList.replace('hiddenText', 'showText');
+});  
+
+  }
+
+}
+
+  </script>
+<style>
+
+  /* layout */
+
+.front-page-vid{
+  border-radius: 50%;
+  width: 10em;
+  object-fit: scale-down !important;
+  border: none !important;
+  transition: 1s;
+  position: relative;
+  z-index: 99999;
+  display: inline-block;
+  filter: grayscale(1);
+  
+}
+
+.front-page-vid:hover {
+  border-radius: 50% 50% 50% 5%;
+  filter: grayscale(0);
+}
+
+.hero-top{
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  max-width: 72rem; margin: 0 auto;
+  box-shadow: 0 0 0 100vmax var(--clr-neutral-900);
+  clip-path: inset(0 -100vmax);
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "headline headline"
+                      "left right"
+  }
+
+.hero-grid-1{
+    grid-area: headline;
+    font-size: 2em;
+    margin-bottom: 2.5em;
+    padding-top: 2.5em;
+}
+
+.hero-grid-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: right;
+  grid-template-areas: "top-left top-right"
+                        "middle-left middle-right"
+                        "bottom-left bottom-right"
+}
+
+.vid-one{
+  grid-area: top-right;
+}
+
+.vid-two{
+  grid-area: middle-left;
+}
+
+    
+ 
+
+
+{# typography #}
+
+h3.video-font{
+  color: #E2E8F0 !important;
+  font-size: 1.15rem;
+  
+}
+
+.hero-title{
+  font-size: 8.5rem;
+  text-decoration: underline;
+  text-decoration-color: #ED2B34;
+}
+
+  p.video-font {
+  color: #adadad !important;
+  font-size: .75rem;
+  z-index: -2 !important;
+  overflow: hidden;
+ 
+}
+
+{# transitions #}
+
+.video-text-container{
+  {# overflow: hidden; #}
+}
+
+p.video-font:hover{
+  opacity: 1;
+}
+
+.transitionY{
+  transform: translateY(-110%);
+  transition-timing-function: ease-out;
+  transition: transform 1.5s;
+  overflow: hidden;
+}
+
+.transition-opacity{
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 1.5s 0.2s cubic-bezier(.42, 0, .58, 1) ease-in-out;
+}
+
+.front-page-vid:hover .transition-opacity{
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.transition{
+  transform: translateX(-110%);
+  transition-timing-function: ease-out;
+  transition: transform 1.5s;
+}
+
+.front-page-vid:hover .transition {
+  transform: translateY(0px);
+  transform: translateX(0px);
+  
+}
+
+.hiddentText{
+  opacity: 0;
+}
+
+.showText{
+  opacity: 1;
+}
+
+
+
+
+
+</style>

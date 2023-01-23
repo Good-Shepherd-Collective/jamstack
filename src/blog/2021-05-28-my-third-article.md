@@ -1,6 +1,6 @@
 ---
-title: My Third Article
-author: Kevin Powell
+title: Masafer Yatta
+author: YoS Admin
 date: 2021-05-28
 tags: ['post', 'featured']
 image: /assets/blog/article-3.jpg
