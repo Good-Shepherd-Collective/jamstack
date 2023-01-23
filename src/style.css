@@ -190,11 +190,11 @@ section,
 }
 
 .article-title {
-  font-size: var(--fs-700);
+  font-size: var(--fs-900);
 }
 
 .section-title {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
 }
 
 
