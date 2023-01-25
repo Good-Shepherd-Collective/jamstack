@@ -1,10 +1,5 @@
---- 
-title: Youth of Sumud
-layout: 'base.njk'
----
-    
 <div class="container">
-    <div id="posts"></div>
+    <div id="gsc-posts"></div>
     </div>
 
     <script>
@@ -22,14 +17,14 @@ fetch(apiUrl)
         <div class="post">
           <img class="post-image-template" src="${post.jetpack_featured_media_url}" alt="${post.title.rendered}">
           <h2>${post.title.rendered}</h2>
-          <p class="author">Author: #DefundRacism</p>
+          <p class="author">Author: Good Shepherd Collective</p>
           <p>${post.excerpt.rendered}</p>
           <a class="btn btn--primary btn-post-template" href="${post.link}">Read More</a>
         </div>
       `;
       
       // Append the template to the HTML
-      document.querySelector('#posts').innerHTML += template;
+      document.querySelector('#gsc-posts').innerHTML += template;
     });
   })
   .catch(error => {
@@ -56,4 +51,3 @@ fetch(apiUrl)
         }
 
     </style>
-    

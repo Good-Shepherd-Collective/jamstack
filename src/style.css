@@ -95,6 +95,8 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -392,3 +394,37 @@ section,
   background-color: var(--clr-neutral-900);
 }
 
+/* external blog block */
+
+.external_blog h3{
+  font-size: .85em;
+}
+
+.external_blog p{
+  font-size: .75em;
+}
+
+.external_blog img{
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.external_blog a{
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.social-media-block{
+margin-top: 15px;
+}
+
+.blog_author{
+margin-bottom: 15px;
+font-weight: 600;
+color: var(--clr-neutral-900);
+}
+
+.blog_snippet_block{
+padding-left: .75em;
+border-left: solid;
+}

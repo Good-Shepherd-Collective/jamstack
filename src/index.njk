@@ -24,14 +24,20 @@ layout: 'base.njk'
   
   <div class="container flow">
     <h2 class="section-title">Youth of Sumud in print</h2>
-    <p class="text-center">Here is a sample of articles that reflect the work and perspective of our activist on the ground.</p>
+    <h3>Here is a sample of articles that reflect the work and perspective of our activist on the ground.</h3>
     <ul role="list" class="articles__list flow">
       
       {%- for post in collections.featured | reverse -%}
+        {%- if loop.index0 < 3 %}
         {% include 'article.snippet.njk' %}
+        {%- endif %}
       {%- endfor -%}
 
     </ul>
-  </div>
-</section> 
+  
+
+  {% include 'defundracism_posts.njk' %}
+  {% include 'gsc_posts.njk' %}
+
+</section>
     

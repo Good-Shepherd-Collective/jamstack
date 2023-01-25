@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Good-Shepherd-Collective/jamstack#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0"
   }
 }
