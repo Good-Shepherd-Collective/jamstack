@@ -2,28 +2,30 @@
 <h3 class="hero-smaller">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</h3>
 <div class="hero-top hero-grid">
     <div class="hero-grid-1">
-        <img src="https://res.cloudinary.com/abualex/image/upload/v1674908244/river-to-the-sea.webp" style="width: 50px; box-shadow: 0 0 0 0; text-align: center; display: inline; margin-bottom: 25px;">
+      <div class="grid-icon">
+        <img  src="https://res.cloudinary.com/abualex/image/upload/v1674908244/river-to-the-sea.webp" style="width: 50px; box-shadow: 0 0 0 0; text-align: center !important; display: inline; margin-bottom: 25px;">
+      </div>
        <p class="hero-block-quote">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</p>
     </div>
   
     <div class="hero-grid-2">
-      <img src="https://res.cloudinary.com/abualex/image/upload/v1674837012/samis-grandma.avif" style="width: 150px; box-shadow: 0 0 0 0;">
+      <img src="https://res.cloudinary.com/abualex/image/upload/v1674837012/samis-grandma.avif" style="width: 150px; box-shadow: 0 0 0 0; filter: drop-shadow(0 0 0.05rem black);">
     </div>
 
     <div class="hero-grid-3">
-      <p class="activist-title">On the ground</p>
-      <div>
+      <p class="hero-block-quote" style="margin-bottom: 25px !important;"><span style="font-weight: 400;">On the ground<span></p>
+      <div class="profile-pics">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
       </div>
-      <div>
+      <div class="profile-pics">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
         <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
       </div>
-          <p class="hero-block-quote">
-            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br> <span style="font-weight: 400; color: var(--clr-neutral-400)>">- Sami Huraini</span>
+          <p class="hero-block-quote" style="margin-top: 25px !important;">
+            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br> <span style="font-weight: 400;">- Sami Huraini</span>
           </p>
     </div>
      
@@ -36,6 +38,11 @@
     border-radius: 50%; 
     display: inline !important; 
     width: 2em;
+  }
+
+  .hero-icon: {
+    display: grid;
+    place-items: center;
   }
 
  .hero-grid{
@@ -93,6 +100,11 @@
 
 @media (max-width: 600px){
 
+  .grid-icon{
+    display: grid; 
+    place-items: center;
+  }
+
 
   .hero-grid{
   display: grid;
@@ -101,6 +113,7 @@
                       "middle" 
                       "right";
   grid-row-gap: 4em;
+  justify-content: center;
  }
 
  .hero-grid-1{
@@ -111,12 +124,30 @@
   padding-bottom: 2.5em;
  }
 
+ .hero-icon{
+  display: inline;
+ }
+
+ .hero-block-quote{
+  text-align: center;
+ }
+ 
+
  .hero-grid-3{
   background-color: var(--clr-primary-200) !important;
   box-shadow: 0 0 0 100vmax var(--clr-primary-200);
   clip-path: inset(0 -100vmax);
   padding-top: 2.5em;
   padding-bottom: 2.5em;
+ }
+
+ .profile-pics{
+  text-align: center !important;
+ }
+
+ .hero-grid-photos{
+  width: 3em;
+  margin: 5px;
  }
 
 }
