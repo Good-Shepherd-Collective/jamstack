@@ -2,6 +2,7 @@
 title: Youth of Sumud
 layout: 'base.njk'
 ---
+<div class="container">
  <div>
 {% include 'hero.njk' %}
 </div>      
@@ -34,10 +35,47 @@ layout: 'base.njk'
       {%- endfor -%}
 
     </ul>
+</section>
+  
+<section class="partner-blog-container">
+  <div class="parnter-blog-container-left">{% include 'defundracism_posts.njk' %}</div>
+  <div class="parnter-blog-container-middle">{% include 'gsc_posts.njk' %}</div>
+  <div class="parnter-blog-container-right">{% include 'mondoweiss_posts.njk' %}</div>
+</section>
   
 
-  {% include 'defundracism_posts.njk' %}
-  {% include 'gsc_posts.njk' %}
+</div>
 
-</section>
-    
+<style>
+
+
+
+.partner-blog-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "left middle right"
+}
+
+.partner-blog-container div{
+  margin-top: 1em;
+}
+
+.parnter-blog-container-left{
+  grid-area: left;
+}
+
+.partner-blog-container-middle{
+  grid-area: middle;
+}
+
+.partner-blog-container-right{
+  grid-area: right;
+}
+
+@media (max-width: 768px) {
+  .partner-blog-container{
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+</style>

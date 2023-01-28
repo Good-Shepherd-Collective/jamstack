@@ -1,197 +1,95 @@
-<div class="hero-top">
+<h1 class="hero-title section-title">We will remain</h1>
+<h3 class="hero-smaller">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</h3>
+<div class="hero-top hero-grid">
     <div class="hero-grid-1">
-        <h1 class="hero-title">We will remain</h1>
-        <h4>As our communities facing elimination, like indigenous communities everywhere, we will stay on our historical lands.</h3>
+        <img src="https://res.cloudinary.com/abualex/image/upload/v1674908244/river-to-the-sea.webp" style="width: 50px; box-shadow: 0 0 0 0; text-align: center; display: inline; margin-bottom: 25px;">
+       <p class="hero-block-quote">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</p>
     </div>
+  
+    <div class="hero-grid-2">
+      <img src="https://res.cloudinary.com/abualex/image/upload/v1674837012/samis-grandma.avif" style="width: 150px; box-shadow: 0 0 0 0;">
+    </div>
+
+    <div class="hero-grid-3">
+      <p class="activist-title">On the ground</p>
+      <div>
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+      </div>
+      <div>
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+      </div>
+          <hr>
+          <p class="hero-block-quote">
+            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br> <span style="font-weight: 400; color: var(--clr-neutral-400)>">- Sami Huraini</span>
+          </p>
+    </div>
+     
     
 </div>
 
 <style>
-
-    
-
-</style>
-
-<script>
-
-
-document.addEventListener("DOMContentLoaded", playOnHover);
-
-function playOnHover() {
-  var videos = document.getElementsByTagName('video');
-  
-  for (var i = 0; i < videos.length; i++) {
-    videos[i].addEventListener('touchstart', function() {
-      this.play();
-    }, { passive: true });
-    videos[i].addEventListener('touchend', function() {
-      this.pause();
-    }, { passive: true });
-    videos[i].addEventListener('mouseover', function() {
-      this.play();
-    }, { passive: true });
-    videos[i].addEventListener('mouseout', function() {
-      this.pause();
-    }, { passive: true });
-  }
-}
-
-function animateVideoText(){
-  const videoText = document.getElementsByClassName('hiddenText');
-  for (var i = 0; i < videoText.length; i++){
-    videoText[i].addEventListener('touchstart', function() {
-      videoText.classList.replace('hiddenText', 'showText');
-});
-videoText[i].addEventListener('touchend', function() {
-
-  videoText.classList.replace('hiddenText', 'showText');
-});
-videoText[i].addEventListener('mouseover', function() {
-  videoText.classList.replace('hiddenText', 'showText');
-});
-videoText[i].addEventListener('mouseout', function() {
-
-  videoText.classList.replace('hiddenText', 'showText');
-});  
-
+  .hero-grid-photos{
+    border-style: none;
+    border-radius: 50%; 
+    display: inline !important; 
+    width: 2em;
   }
 
-}
-
-  </script>
-<style>
-
-  /* layout */
-
-.front-page-vid{
-  border-radius: 50%;
-  width: 10em;
-  object-fit: scale-down !important;
-  border: none !important;
-  transition: 1s;
-  position: relative;
-  z-index: 99999;
-  display: inline-block;
-  filter: grayscale(1);
-  
-}
-
-.front-page-vid:hover {
-  border-radius: 50% 50% 50% 5%;
-  filter: grayscale(0);
-}
-
-.hero-top{
-  background-color: var(--clr-neutral-900);
-  color: var(--clr-neutral-100);
-  max-width: 72rem; margin: 0 auto;
-  box-shadow: 0 0 0 100vmax var(--clr-neutral-900);
-  clip-path: inset(0 -100vmax);
-  padding: 3em;
+ .hero-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "headline headline"
-                      "left right"
-  }
+  grid-template-columns: 1fr 55% 1fr;
+  grid-template-areas: "left middle right";
+ }
 
-.hero-grid-1{
-    grid-area: headline;
-    font-size: 2em;
-    margin-bottom: 2.5em;
-    padding-top: 2.5em;
-}
+ .hero-grid-1{
+  grid-area: left;
+  justify-self: end;
+  text-align: right;
+ }
 
-.hero-grid-2{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ .hero-grid-2{
+  grid-area: middle;
+  justify-self: center;  
+ }
+
+ .hero-grid-3{
   grid-area: right;
-  grid-template-areas: "top-left top-right"
-                        "middle-left middle-right"
-                        "bottom-left bottom-right"
-}
+  align-self: center;
+ }
 
-.vid-one{
-  grid-area: top-right;
-}
-
-.vid-two{
-  grid-area: middle-left;
-}
-
-    
- 
-
-
-{# typography #}
-
-h3.video-font{
-  color: #E2E8F0 !important;
-  font-size: 1.15rem;
-  
-}
+ .hero-grid-2 img{
+   width: 100%;
+ }
 
 .hero-title{
-  font-size: 8.5rem;
   text-decoration: underline;
   text-decoration-color: #ED2B34;
+  color: var(--clr-neutral-900);
+  font-size: clamp(4rem, 13vw, 13rem) !important;
+  margin-bottom: 25px;
 }
 
-  p.video-font {
-  color: #adadad !important;
-  font-size: .75rem;
-  z-index: -2 !important;
-  overflow: hidden;
- 
+.hero-smaller{
+  color: var(--clr-neutral-900);
+  font-weight: 200;
+  margin-bottom: 3em;
 }
 
-{# transitions #}
-
-.video-text-container{
-  {# overflow: hidden; #}
+.hero-block-quote{
+  font-size: .75em;
+  font-weight: 200;
 }
 
-p.video-font:hover{
-  opacity: 1;
-}
-
-.transitionY{
-  transform: translateY(-110%);
-  transition-timing-function: ease-out;
-  transition: transform 1.5s;
-  overflow: hidden;
-}
-
-.transition-opacity{
-  opacity: 0;
-  filter: blur(2px);
-  transition: all 1.5s 0.2s cubic-bezier(.42, 0, .58, 1) ease-in-out;
-}
-
-.front-page-vid:hover .transition-opacity{
-  opacity: 1;
-  filter: blur(0px);
-}
-
-.transition{
-  transform: translateX(-110%);
-  transition-timing-function: ease-out;
-  transition: transform 1.5s;
-}
-
-.front-page-vid:hover .transition {
-  transform: translateY(0px);
-  transform: translateX(0px);
-  
-}
-
-.hiddentText{
-  opacity: 0;
-}
-
-.showText{
-  opacity: 1;
-}
-
+.activist-title{
+  font-size: .75em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  color: var(--clr-neutral-400);
+  }
 
 
 
