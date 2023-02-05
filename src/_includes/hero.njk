@@ -1,5 +1,12 @@
-<h1 class="hero-title section-title">We will remain</h1>
-<h3 class="hero-smaller">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</h3>
+
+<header class="site-header" >
+  <div class="site-header-mask">
+    
+    <h1 class="site-title">We will remain</h1>
+    
+    
+  </div>
+</header>
 <div class="hero-top hero-grid">
     <div class="hero-grid-1">
       <div class="grid-icon">
@@ -7,25 +14,16 @@
       </div>
        <p class="hero-block-quote">As our communities face elimination, like indigenous communities everywhere, we will stay on our historical lands.</p>
     </div>
-  
-    <div class="hero-grid-2">
-      <img src="https://res.cloudinary.com/abualex/image/upload/v1674837012/samis-grandma.avif" style="width: 150px; box-shadow: 0 0 0 0; filter: drop-shadow(0 0 0.05rem black);">
-    </div>
 
-    <div class="hero-grid-3">
-      <p class="hero-block-quote" style="margin-bottom: 25px !important;"><span style="font-weight: 400;">On the ground<span></p>
+    <div class="hero-grid-2">
+      <p class="hero-block-quote" style="margin-bottom: 25px !important;"><span>OUR ACTIVISTS<span></p>
       <div class="profile-pics">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
-      </div>
-      <div class="profile-pics">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
-        <img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp">
+        <a href="https://twitter.com/HurainiSami" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp"></a>
+        <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/v1675262796/ali.webp"></a>
+        <a href="https://www.facebook.com/malik.789456123" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1675262986/malik.webp"></a>
       </div>
           <p class="hero-block-quote" style="margin-top: 25px !important;">
-            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br> <span style="font-weight: 400;">- Sami Huraini</span>
+            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  SAMI HURAINI </span>
           </p>
     </div>
      
@@ -33,6 +31,71 @@
 </div>
 
 <style>
+
+  
+
+  .site-header {
+  background-image: url("https://res.cloudinary.com/abualex/image/upload/v1675514346/font-page-background.webp");
+  background-position: bottom;
+  background-size: cover;
+  /* background-attachment: fixed; */
+ 
+  min-height: 70vh;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.site-header-mask {
+  /*   --mask-source: url('https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp');
+  --mask-position: bottom;
+  --mask-size: cover; */
+
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.0);
+
+  -webkit-mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
+  -webkit-mask-position: center bottom;
+  -webkit-mask-size: 100%;
+
+  mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
+  mask-position: bottom;
+  mask-size: cover;
+
+}
+
+.site-title {
+  text-align: left;
+  font-size: clamp(3.5rem, 9vw + 0.5rem, 4rem);
+  {# font-size: 3.5em; #}
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  position: fixed;
+  display: inline;
+  border: 2px solid #ED2B34;
+  display: inline-block;
+  width: 90%;
+  filter: drop-shadow(1px -2px 3px rgba(0, 0, 0, .5));
+  color: white;
+}
+
+.site-title-smaller {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1;
+  padding-left: 1.2rem;
+  position: fixed;
+  width: 100%;
+  transform: translateY(7.5rem);
+   border: 2px solid #ED2B34;
+  display: inline-block;
+  width: 90%;
+}
+
+
   .hero-grid-photos{
     border-style: none;
     border-radius: 50%; 
@@ -47,8 +110,9 @@
 
  .hero-grid{
   display: grid;
-  grid-template-columns: 1fr 55% 1fr;
-  grid-template-areas: "left middle right";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  grid-column-gap: 4em;
  }
 
  .hero-grid-1{
@@ -59,18 +123,11 @@
  }
 
  .hero-grid-2{
-  grid-area: middle;
+  grid-area: right;
   justify-self: center;  
  }
 
- .hero-grid-3{
-  grid-area: right;
-  align-self: center;
- }
 
- .hero-grid-2 img{
-   width: 100%;
- }
 
 .hero-title{
   text-decoration: underline;

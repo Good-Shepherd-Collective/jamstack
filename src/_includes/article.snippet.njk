@@ -2,8 +2,28 @@
     <article class="snippet">
         <img src="{{ post.data.image }}" class="snippet__image" alt="{{ post.data.imageAlt }}">
         <h2 class="snippet__title">{{ post.data.title }} </h2>
-        <p class="snippet__meta">by <span>{{ post.data.author}}</span><br><span>{{ post.data.date | postDate }}</span></p>
-        <p class="snippet__body">{{ post.data.description }}</p>
-        <a href="{{ post.url }}" class="btn btn--primary">Continue </a>
+        <p class="hero-paragraph">by <span>{{ post.data.author}}</span><br><span>{{ post.data.date | postDate }}</span></p>
+        <p class="hero-paragraph">{{ post.data.description }}</p>
+        <a href="{{ post.url }}" class="gsc-button">Continue</a>
     </article>
 </li>
+
+<style>
+ .gsc-button{
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.45em .75em;
+  border-radius: 0.25em;
+  align-self: start;
+  justify-self: start;
+  font-size: .65em;
+  background-color: var(--clr-neutral-900);
+  color: white;
+  font-weight: 300;
+}
+
+.gsc-botton a{
+  color: red;}
+</style>

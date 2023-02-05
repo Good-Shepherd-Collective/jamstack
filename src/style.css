@@ -82,6 +82,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: rgb(231, 231, 231);
 }
 
 
@@ -167,7 +168,9 @@ section,
 .container {
   margin-inline: auto;
   padding-inline: 1em;
-  max-width: 72rem;
+  max-width: 42rem;
+  /* background-color: aqua;
+  outline: 2px solid black; */
 }
 
 .container--narrow {
@@ -189,6 +192,7 @@ section,
 .article-title,
 .section-title {
   color: var(--clr-primary-500);
+  
 }
 
 .article-title {
@@ -360,7 +364,7 @@ section,
   text-decoration: none;
   display: inline-block;
   line-height: 1;
-  padding: 0.75em 1.75em;
+  padding: 0.35em .5em;
   border-radius: 0.25em;
   align-self: start;
   justify-self: start;
@@ -374,7 +378,7 @@ section,
 .btn--primary {
   background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-300);
   border: 2px solid var(--clr-primary-400);
 }
 .btn--primary:hover,

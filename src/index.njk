@@ -2,53 +2,78 @@
 title: Youth of Sumud
 layout: 'base.njk'
 ---
-<div class="container">
- <div>
-{% include 'hero.njk' %}
-</div>      
-<section>
-  <div class="container flow">
+<div>
+  <div>
+    {% include 'hero.njk' %}
+  </div>
+     
+  <section>
+    <div class="flow second-hero">
       <div class="hero__content flow">
         <h1 class="section-title">Why resistance to dispossession and violence matters.</h1>
-        <p>Youth of Sumud is a grassroots formation representing the continuation of the Palestinian resistance to Israeli state violence and ethnic cleansing. We are a group of activists following in the footsteps of the generations that have organized to stay on their lands. </p>
+        <p class="hero-paragraph">Youth of Sumud is a grassroots formation representing the continuation of the Palestinian resistance to Israeli state violence and ethnic cleansing. We are a group of activists following in the footsteps of the generations that have organized to stay on their lands. </p>
         <div class="flex-group">
-          <a href="#featured-articles" class="btn btn--primary">Find out more</a>
+          <a href="#featured-articles" class="gsc-button">Find out more</a>
         </div>
       </div>
-      <div>
+      <div class="hero-image">
         <img src="https://res.cloudinary.com/abualex/image/upload/v1674485370/Youth%20of%20Sumud/288878584_1076909229638651_4298605257144378189_n.avif" alt="Youth of Sumud activist at a protest" class="hero__image">
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<section id="featured-articles" class="featured-articles">
+  <section id="featured-articles" class="featured-articles">
+    
+    <div class="flow">
+      <h2 class="section-title">Youth of Sumud in print</h2>
+      <p class="hero-paragraph">Here is a sample of articles that reflect the work and perspective of our activist on the ground.</p>
+      <ul role="list" class="articles__list flow">
+        
+        {%- for post in collections.featured | reverse -%}
+          {%- if loop.index0 < 3 %}
+          {% include 'article.snippet.njk' %}
+          {%- endif %}
+        {%- endfor -%}
+
+      </ul>
+  </section>
   
-  <div class="container flow">
-    <h2 class="section-title">Youth of Sumud in print</h2>
-    <h3>Here is a sample of articles that reflect the work and perspective of our activist on the ground.</h3>
-    <ul role="list" class="articles__list flow">
-      
-      {%- for post in collections.featured | reverse -%}
-        {%- if loop.index0 < 3 %}
-        {% include 'article.snippet.njk' %}
-        {%- endif %}
-      {%- endfor -%}
-
-    </ul>
-</section>
-  
-<section class="partner-blog-container">
-  <div class="parnter-blog-container-left">{% include 'defundracism_posts.njk' %}</div>
-  <div class="parnter-blog-container-middle">{% include 'gsc_posts.njk' %}</div>
-  <div class="parnter-blog-container-right">{% include 'mondoweiss_posts.njk' %}</div>
-</section>
+  <section class="partner-blog-container">
+    <div class="parnter-blog-container-left">{% include 'defundracism_posts.njk' %}</div>
+    <div class="parnter-blog-container-middle">{% include 'gsc_posts.njk' %}</div>
+    <div class="parnter-blog-container-right">{% include 'mondoweiss_posts.njk' %}</div>
+  </section>
   
 
-</div>
-
+</div> 
 <style>
 
+  .hero-paragraph{
+    font-size: .75em;
+    font-weight: 300;
+  }
 
+.second-hero{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right"
+}
+
+.second-hero h1{
+  grid-area: left;
+}
+
+.second-hero p{
+  grid-area: left;
+}
+
+.second-hero .btn{
+  grid-area: left;
+}
+
+.second-hero img{
+  grid-area: right;
+}
 
 .partner-blog-container{
   display: grid;
@@ -77,5 +102,36 @@ layout: 'base.njk'
     display: block;
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+@media (max-width: 600px){
+  .second-hero{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "testing"
+                        "title"
+                        "text"
+                        "button";
+}
+
+.second-hero .hero-image{
+  grid-area: testing;
+  margin-bottom: 1em;
+}
+
+.second-hero h1{
+  grid-area: title;
+}
+
+.second-hero p{
+  grid-area: text;
+}
+
+.second-hero .btn{
+  grid-area: button;
+}
+
+
 }
 </style>
