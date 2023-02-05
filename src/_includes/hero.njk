@@ -41,10 +41,9 @@
   /* background-attachment: fixed; */
  
   min-height: 70vh;
-  position: relative;
+  position: relative !important;
   overflow-wrap: break-word;
 }
-
 .site-header-mask {
   /*   --mask-source: url('https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp');
   --mask-position: bottom;
@@ -56,7 +55,8 @@
 
   -webkit-mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
   -webkit-mask-position: center bottom;
-  -webkit-mask-size: 100%;
+  -webkit-mask-size: cover !important;
+  -webkit-mask-repeat: no-repeat;
 
   mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
   mask-position: bottom !important;
