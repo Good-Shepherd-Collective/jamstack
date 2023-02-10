@@ -5,17 +5,13 @@
 <h1>Stand with us in Palestine</h1>
 <p>Come to join us in solidarity. Help us organize on the ground, coordinate camapaigns, and be an active presence in the communities most at risk.</p>
 <form action="/.netlify/functions/subscribe" method="post">
-      <div class="header">
-         <p>This makes no sense</p>
-      </div>
-      <div class="description">
-        <p>I publish new articles every week. Be sure to subscribe to my newsletter to make sure you never miss a post!</p>
-      </div>
       <div class="input">
         <input type="text" class="button" id="name" name="name" placeholder="YOUR NAME">
       </div>
       <div class="input">
         <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+      </div>
+      <div class="input">
         <input type="submit" class="button" id="submit" value="SIGN UP">
       </div>
     </form>
@@ -28,8 +24,27 @@
     color: var(--clr-neutral-100);
     box-shadow: 0 0 0 100vmax var(--clr-neutral-900);
     clip-path: inset(0 -100vmax);
-    height: 75vh;
-    padding: 2rem;
+    height: 75vh !important;
     height: 80vh;
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    
+    }
+
+    .visit input{
+      border: .75px solid var(--clr-neutral-100);
+      border-radius: 5px;
+      background-color: var(--clr-neutral-100);
+      font-size: .8rem;
+      margin: 5px;
+      display: flex;
+      padding: .35rem 1.25rem;
+    }
+
+.input input[type="submit"] {
+  text-align: center;
+}
+ 
 </style>
