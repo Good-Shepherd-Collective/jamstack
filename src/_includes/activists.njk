@@ -1,13 +1,27 @@
- <div>
+ <div style="padding-top: 2rem; padding-bottom: 2rem;">
       <H3>Our Activists</H3>
-      <div class="profile-pics">
-        <a href="https://twitter.com/HurainiSami" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp"></a>
-        <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/v1675262796/ali.webp"></a>
-        <a href="https://www.facebook.com/malik.789456123" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1675262986/malik.webp"></a>
+      
+      <div class="profile-pic-grid">
+        
+        <div class="profile-pic-grid-1">
+          <a href="https://twitter.com/HurainiSami" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp"></a>
+          <p class="profile-name">Sami Huraini</p>
+        </div>
+        
+        <div class="profile-pic-grid-2">
+          <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/v1675262796/ali.webp"></a><p class="profile-name">Ali Awad</p>
+        </div>
+        
+        <div class="profile-pic-grid-3">
+          <a href="https://www.facebook.com/malik.789456123" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1675262986/malik.webp"></a><p class="profile-name">Malik Huraini</p>
+        </div>
+     
       </div>
           <p class="hero-block-quote" style="margin-top: 25px !important;">
             "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  SAMI HURAINI </span>
           </p>
+      </div>
+
     </div>
      
     
@@ -17,5 +31,26 @@
     box-shadow: none;
     height: 4rem;
     display: inline-block;
+  }
+
+  .profile-pic-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 1rem;
+    grid-template-areas: "left middle right";
+    font-size: .75rem;
+  }
+
+  .profile-pic-grid-1{
+    grid-area: left;
+  }
+
+  .profile-pic-grid-2{
+    grid-area: middle;
+  }
+
+  .profile-pic-grid-3{
+    grid-area: right;
   }
 </style>

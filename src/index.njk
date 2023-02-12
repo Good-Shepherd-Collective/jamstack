@@ -3,12 +3,14 @@ title: Youth of Sumud
 layout: 'base.njk'
 ---
 <div>
+  <div class="about-grid">
+    <div class="about-grid-1">
+      {% include 'about-yos.njk' %}
+    </div>
+    <div class="about-grid-2">
+      {% include 'activists.njk' %}
+    </div>
   <div>
-    {% include 'about-yos.njk' %}
-  </div>
-  <div>
-    {% include 'activists.njk' %}
-  </div>
   <div>
     {% include 'email-signup.njk' %}
   </div>
@@ -53,6 +55,19 @@ layout: 'base.njk'
 
 </div> 
 <style>
+.about-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right";
+  grid-column-gap: 2em;
+}
+
+.about-grid-1{
+  grid-area: left;
+}
+.about-grid-2{
+  grid-area: right;
+}
 
   .hero-paragraph{
     font-size: .75em;
