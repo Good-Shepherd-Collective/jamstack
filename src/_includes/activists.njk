@@ -9,16 +9,36 @@
         </div>
         
         <div class="profile-pic-grid-2">
-          <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/v1675262796/ali.webp"></a><p class="profile-name">Ali Awad</p>
+          <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/c_scale,f_webp,q_100,w_100/v1675262986/malik.webp"></a><p class="profile-name">Ali Awad</p>
         </div>
         
         <div class="profile-pic-grid-3">
-          <a href="https://www.facebook.com/malik.789456123" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1675262986/malik.webp"></a><p class="profile-name">Malik Huraini</p>
+          <a href="https://www.facebook.com/malik.789456123" target="_blank">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_avif,q_100,w_100/v1675262986/malik.avif" />
+            <source 
+              type="image/webp"
+              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_webp,q_100,w_100/v1675262986/malik.webp" />
+            <img 
+              src="/image.png"
+              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_png,q_100,w_100/v1675262986/malik.png"
+              sizes="(max-width: 4rem) 100vw, 50vw"
+              style="width: 4rem; aspect-ratio: 1/1"
+              loading="lazy"
+              decoding="async"
+              alt="Profile pic Malik Huraini"
+            />
+          </picture>
+          </a>
+          
+          <p class="profile-name">Malik Huraini</p>
         </div>
      
       </div>
           <p class="hero-block-quote" style="margin-top: 25px !important;">
-            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="red-underline">SAMI HURAINI</span>
+            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="red-underline">Sami Huraini</span>
           </p>
       </div>
 
@@ -57,5 +77,15 @@
 
   .profile-pic-grid-3{
     grid-area: right;
+  }
+
+  .profile-pic-grid img{
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    box-shadow: none;
+  }
+
+  .profile-pic-grid picture{
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    box-shadow: none;
   }
 </style>

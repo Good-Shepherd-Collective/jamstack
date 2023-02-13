@@ -34,7 +34,7 @@ layout: 'base.njk'
     
     <div class="flow">
       <h2 class="section-title">Youth of Sumud in print</h2>
-      <p class="hero-paragraph">Here is a sample of articles that reflect the work and perspective of our activist on the ground.</p>
+      <p class="hero-paragraph">Here is a sample of articles that reflect the work and perspective of our activists on the ground.</p>
       <ul role="list" class="articles__list flow">
         
         {%- for post in collections.featured | reverse -%}
@@ -55,19 +55,6 @@ layout: 'base.njk'
 
 </div> 
 <style>
-{# .about-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "left right";
-  grid-column-gap: 2em;
-}
-
-.about-grid-1{
-  grid-area: left;
-}
-.about-grid-2{
-  grid-area: right;
-} #}
 
 .second-hero{
   display: grid;

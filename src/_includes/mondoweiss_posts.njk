@@ -4,7 +4,7 @@
 <p class="blog_author">Mondoweiss</p>
 <div class="blog_snippet_block">
 {% for post in mondoweiss %}
-  <h3><a href="{{post.link}}" target="_blank">{{ post.title.rendered }}</a></h3>
+  <h3><a href="{{post.link}}" target="_blank">{{ post.title.rendered | safe }}</a></h3>
   <p>{{ post.excerpt.rendered | safe }}</p>
 {% endfor %}
 </div>
