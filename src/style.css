@@ -308,6 +308,14 @@ section,
     "button caption"; */
 }
 
+@media (max-width: 600px) {
+  .snippet{
+    grid-template-areas: "image"
+                        "title";
+  grid-template-columns: 1fr;
+  }
+}
+
 .meta{
   grid-area: title;
 }
