@@ -4,7 +4,7 @@
         <h2 class="snippet__title">{{ post.data.title }} </h2>
         <p class="hero-paragraph">by <span>{{ post.data.author}}</span><br><span>{{ post.data.date | postDate }}</span></p>
         <p class="hero-paragraph">{{ post.data.description }}</p>
-        <a href="{{ post.url }}" class="gsc-button">Continue</a>
+        <a href="{{ post.url }}" class="gsc-button">MORE</a>
     </article>
 </li>
 
@@ -12,16 +12,16 @@
  .gsc-button{
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
   line-height: 1;
-  padding: 0.45em .75em;
+  padding: .35rem 1.25rem;
   border-radius: 0.25em;
   align-self: start;
   justify-self: start;
-  font-size: .65em;
+  font-size: .8rem;
   background-color: var(--clr-neutral-900);
   color: white;
   font-weight: 300;
+  display: flex;
 }
 
 .gsc-botton a{

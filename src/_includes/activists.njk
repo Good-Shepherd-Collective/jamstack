@@ -1,4 +1,4 @@
- <div style="padding-top: 2rem; padding-bottom: 2rem;">
+ <div class="activists">
       <H3>Our Activists</H3>
       
       <div class="profile-pic-grid">
@@ -37,8 +37,8 @@
         </div>
      
       </div>
-          <p class="hero-block-quote" style="margin-top: 25px !important;">
-            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="red-underline">Sami Huraini</span>
+          <p class="quote" style="margin-top: 25px !important;">
+            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="underlined">Sami Huraini</span>
           </p>
       </div>
 
@@ -47,6 +47,19 @@
     
 </div>
 <style>
+  .quote{
+    background-image: url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 95%;
+  }
+
+  .activists{
+    height: min(75vh, 30rem);
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    align-items: center;
+    display: grid;
+  }
   .red-underline{
     text-decoration: underline;
     text-decoration-color: #ff0000;
@@ -88,4 +101,6 @@
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     box-shadow: none;
   }
+
+
 </style>

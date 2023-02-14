@@ -436,3 +436,19 @@ color: var(--clr-neutral-900);
 padding-left: .75em;
 border-left: solid;
 }
+
+.underlined {
+  position: relative;
+  margin-right: 0rem;
+}
+.underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 2px #ff0000;
+  border-color: #ff0000 transparent transparent transparent;
+  border-radius: 10%;
+}
