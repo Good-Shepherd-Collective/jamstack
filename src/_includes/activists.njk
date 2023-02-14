@@ -1,105 +1,89 @@
  <div class="activists">
-      <H3>Our Activists</H3>
+      <H2>Youth of Sumud Organizers</H2>
+      <h4>Being on the frontlines resisting Israeli violence and indigenous erasure, our founding members have been arrested, beaten, and imprisoned while standing in solidarity with the must vulnerable. </h4>
       
-      <div class="profile-pic-grid">
-        
-        <div class="profile-pic-grid-1">
-          <a href="https://twitter.com/HurainiSami" target="_blank"><img class="hero-grid-photos" src="https://res.cloudinary.com/abualex/image/upload/v1674905126/sami.webp"></a>
-          <p class="profile-name">Sami Huraini</p>
+      <div class="activist-profile-grid">
+        <div class="profile-block left-activist-profile">
+          <img src="https://res.cloudinary.com/abualex/image/upload/v1676386696/sami-mug.webp">
+          <p>Sami<br>Huraini</p>
         </div>
-        
-        <div class="profile-pic-grid-2">
-          <a href="https://twitter.com/Ali_awad1998" target="_blank"> <img class="hero-grid-photos" style="aspect-ratio: 1/1;" src="https://res.cloudinary.com/abualex/image/upload/c_scale,f_webp,q_100,w_100/v1675262986/malik.webp"></a><p class="profile-name">Ali Awad</p>
+
+        <div class="profile-block middle-activist-profile">
+          <img src="https://res.cloudinary.com/abualex/image/upload/v1676387693/ali-mug.webp">
+          <p>Ali<br>Awad</p>
         </div>
-        
-        <div class="profile-pic-grid-3">
-          <a href="https://www.facebook.com/malik.789456123" target="_blank">
-          <picture>
-            <source
-              type="image/avif"
-              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_avif,q_100,w_100/v1675262986/malik.avif" />
-            <source 
-              type="image/webp"
-              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_webp,q_100,w_100/v1675262986/malik.webp" />
-            <img 
-              src="/image.png"
-              srcset="https://res.cloudinary.com/abualex/image/upload/c_scale,f_png,q_100,w_100/v1675262986/malik.png"
-              sizes="(max-width: 4rem) 100vw, 50vw"
-              style="width: 4rem; aspect-ratio: 1/1"
-              loading="lazy"
-              decoding="async"
-              alt="Profile pic Malik Huraini"
-            />
-          </picture>
-          </a>
-          
-          <p class="profile-name">Malik Huraini</p>
+
+        <div class="profile-block right-activist-profile">
+          <img src="https://res.cloudinary.com/abualex/image/upload/v1676387888/malik-mug.webp">
+          <p>Malik<br>Huraini</p>
         </div>
+      </div>
+
+      
+      
      
       </div>
           <p class="quote" style="margin-top: 25px !important;">
             "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="underlined">Sami Huraini</span>
           </p>
       </div>
-
-    </div>
      
     
 </div>
 <style>
-  .quote{
-    background-image: url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote-right.svg");
-    background-repeat: no-repeat;
-    background-position: right 5% bottom 95%;
-  }
+  
 
-  .activists{
-    height: min(75vh, 30rem);
-    padding-top: 2rem; 
-    padding-bottom: 2rem;
+
+  .activist-profile-grid{
+    display: grid;
+    grid-template-areas: 
+      "left middle right";
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    justify-items: start;
     align-items: center;
-    display: grid;
-  }
-  .red-underline{
-    text-decoration: underline;
-    text-decoration-color: #ff0000;
-    font-weight: 600;
-  }
-  .hero-grid-photos{
-    box-shadow: none;
-    height: 4rem;
-    display: inline-block;
   }
 
-  .profile-pic-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 1rem;
-    grid-template-areas: "left middle right";
-    font-size: .75rem;
-  }
-
-  .profile-pic-grid-1{
+  .left-activist-profile{
     grid-area: left;
   }
 
-  .profile-pic-grid-2{
+  .middle-activist-profile{
     grid-area: middle;
   }
 
-  .profile-pic-grid-3{
-    grid-area: right;
+  .right-activist-profile{
+    grid-area: right;}
+
+  .activists{
+    padding-top: 4rem; 
+    padding-bottom: 4rem;
+    align-items: center;
+    display: grid;
   }
 
-  .profile-pic-grid img{
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-    box-shadow: none;
+  .activists H4{
+    margin-bottom: 2rem;
+  }
+  
+  .activists img{
+    height: 4rem;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    content-fit: cover;
   }
 
-  .profile-pic-grid picture{
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-    box-shadow: none;
+  .quote{
+      background-image: url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote-right.svg");
+      background-repeat: no-repeat;
+      background-position: right 5% bottom 95%;
+    }
+
+  .profile-block p{
+    font-size: .65rem;
+    line-height: .75rem;
+    font-weight: 500;
   }
 
 
