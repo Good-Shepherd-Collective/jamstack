@@ -1,10 +1,18 @@
 <li>
+  <hr style="margin-bottom: 3rem;">
     <article class="snippet">
+      <div class="snippet-area-image">
+        <figure>
         <img src="{{ post.data.image }}" class="snippet__image" alt="{{ post.data.imageAlt }}">
+        <figcaption class="snippet__caption">{{ post.data.imageAlt }}</figcaption>
+        </figure>
+        </div>
+        <div class="meta">
         <h2 class="snippet__title">{{ post.data.title }} </h2>
-        <p class="hero-paragraph">by <span>{{ post.data.author}}</span><br><span>{{ post.data.date | postDate }}</span></p>
-        <p class="hero-paragraph">{{ post.data.description }}</p>
-        <a href="{{ post.url }}" class="gsc-button">MORE</a>
+        <p class="snippet__meta">by <span>{{ post.data.author}}</span><br><span>{{ post.data.date | postDate }}</span></p>
+        {# <p class="hero-paragraph">{{ post.data.description }}</p> #}
+        <a href="{{ post.url }}" class="btn gsc-button">MORE</a>
+        </div>
     </article>
 </li>
 
@@ -12,7 +20,6 @@
  .gsc-button{
   cursor: pointer;
   text-decoration: none;
-  line-height: 1;
   padding: .35rem 1.25rem;
   border-radius: 0.25em;
   align-self: start;
@@ -21,9 +28,15 @@
   background-color: var(--clr-neutral-900);
   color: white;
   font-weight: 300;
-  display: flex;
 }
 
 .gsc-botton a{
-  color: red;}
+  color: red;
+  }
+  figcaption{
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--clr-neutral-900);
+    margin-top: 0.5rem;
+  }
 </style>

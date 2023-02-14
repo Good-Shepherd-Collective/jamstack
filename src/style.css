@@ -303,25 +303,32 @@ section,
   display: grid;
   gap: 1em;
   grid-template-areas:
-    "image"
-    "title"
-    "meta"
-    "body"
-    "button";
+    "title image";
+    /* "meta image"
+    "button caption"; */
+}
+
+.meta{
+  grid-area: title;
+}
+
+.snippet-area-image{
+  grid-area: image;
 }
 
 .snippet__image {
-  grid-area: image;
+  /* grid-area: image; */
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 .snippet__title {
-  grid-area: title;
+  /* grid-area: title; */
 }
 .snippet__meta {
-  grid-area: meta;
+  /* grid-area: meta; */
   color: var(--clr-neutral-300);
+  margin-top: 1rem;
 }
 
 .snippet__meta span {
@@ -329,7 +336,7 @@ section,
 }
 
 .snippet .btn {
-  grid-area: button;
+  /* grid-area: button; */
 }
 
 .snippet__title {
@@ -347,7 +354,7 @@ section,
   color: var(--clr-primary-500);
 } 
 
-@media (min-width: 45em) {
+/* @media (min-width: 45em) {
   .snippet {
     grid-template-areas:
       "title image"
@@ -358,7 +365,7 @@ section,
     grid-template-columns: 1fr 40%;
     grid-template-rows: min-content min-content min-content 1fr;
   }
-}
+} */
 
 .btn {
   cursor: pointer;
