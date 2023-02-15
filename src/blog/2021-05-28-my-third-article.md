@@ -3,7 +3,7 @@ title: Israeli settlers attacked my father on our land. The settlers are free, w
 author: Mohammad Huraini
 date: 2022-09-16
 tags: ['post', 'featured']
-image: https://res.cloudinary.com/abualex/image/upload/v1674481875/Youth%20of%20Sumud/FciYUuqWYAUd2gH.jpg
+image: https://res.cloudinary.com/abualex/image/upload/c_scale,w_700/v1674481875/Youth%20of%20Sumud/FciYUuqWYAUd2gH.avif
 imageAlt: Hafez Huraini is taken to the hospital with two broken arms after an Israeli settler attack on his lands. 
 description: Every day, we face this injustice and apartheid not only from the settlers, soldiers, or police but from the entire system that uses violence to hurt us, steal our land and imprison us. We need your support now more than ever.
 

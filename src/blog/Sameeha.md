@@ -3,7 +3,7 @@ title: Demolishing our community center won’t destroy our resistance
 author: Sameeha Hureini
 date: 2022-08-24
 tags: ["post", "featured"]
-image: https://static.972mag.com/www/uploads/2022/08/main_image18277_MPZa6EmAUk-1000x668.jpg
+image: https://res.cloudinary.com/abualex/image/upload/c_scale,f_auto,w_700/v1676455084/yos-garden.jpg
 imageAlt: Activists rebuild garden in Masafer Yatta.  Activestills | Ahmad Al-Bazz
 description: The pending erasure of the Indigenous people of Masafer Yatta isn’t solely about the “occupation,” as liberal Zionists would lead you to believe. Palestinians are fighting much more than an “occupation.” We are fighting Israel’s program of settler-colonialism.
 ---
