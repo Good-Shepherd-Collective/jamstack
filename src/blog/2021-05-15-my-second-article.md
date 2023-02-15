@@ -2,7 +2,7 @@
 title: Ethnic cleansing “made in USA”
 author: Mohammad Huraini
 date: 2022-20-21
-image: https://res.cloudinary.com/abualex/image/upload/v1674481326/Youth%20of%20Sumud/hureini.png
+image: https://res.cloudinary.com/abualex/image/upload/c_scale,w_700/v1674481326/Youth%20of%20Sumud/hureini.avif
 imageAlt: This is a test
 description: US arms exporters are able to utilize Palestinian neighborhoods and communities as testing fields. It's not uncommon to see tear gas canisters spread across the roads and fields with "Made in the USA" written on the side. 
 ---
