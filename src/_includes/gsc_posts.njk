@@ -5,7 +5,7 @@
 <div class="blog_snippet_block">
 {% for post in goodshepherdcollective %}
   <h3><a href="{{post.link}}" target="_blank">{{ post.title.rendered }}</a></h3>
-  <p>{{ post.excerpt.rendered | safe }}</p>
+  <p>{{ post.excerpt.rendered | safe | truncate(180)}}</p>
 {% endfor %}
 </div>
 <div class="social-media-block">

@@ -447,10 +447,7 @@ font-weight: 600;
 color: var(--clr-neutral-900);
 }
 
-.blog_snippet_block{
-padding-left: .75em;
-border-left: solid;
-}
+
 
 .underlined {
   position: relative;
