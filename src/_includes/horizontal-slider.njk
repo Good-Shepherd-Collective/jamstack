@@ -1,0 +1,41 @@
+<div style="overflow: hidden;">
+<ul class="carousel x-slide">
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+  <li class="item">{% include 'defundracism_posts.njk' %}</li>
+</ul>
+<div>
+
+<style>
+
+ul {
+ all: unset;
+ list-style: none;
+ counter-reset: li;
+}
+.item {
+ scroll-snap-align: start;
+ width: 25vw;
+ flex: 0 0 auto;
+ display: grid;
+ place-content: center;
+}
+
+.carousel {
+ scroll-padding: 0 12px;
+
+ width: 100vw;
+ display: flex;
+ gap: 12px;
+}
+
+.x-slide {
+ scroll-snap-type: x mandatory;
+ overflow-x: auto;
+}
+</style>

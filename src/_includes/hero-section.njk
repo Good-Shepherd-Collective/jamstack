@@ -1,0 +1,73 @@
+<header class="site-header" >
+  <div class="site-header-mask">
+    
+    <h1 class="site-title">We will remain</h1>
+  </div>
+</header>
+
+<style>
+  .site-header {
+  background-image: url("https://res.cloudinary.com/abualex/image/upload/v1675514346/font-page-background.webp");
+  background-position: bottom !important;
+  background-size: cover;
+  /* background-attachment: fixed; */
+ 
+  min-height: 100vh;
+  position: relative !important;
+  overflow-wrap: break-word;
+}
+.site-header-mask {
+  /*   --mask-source: url('https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp');
+  --mask-position: bottom;
+  --mask-size: cover; */
+
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.0);
+
+  -webkit-mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
+  -webkit-mask-position: center bottom;
+  -webkit-mask-size: cover !important;
+  -webkit-mask-repeat: no-repeat;
+
+  mask: url("https://res.cloudinary.com/abualex/image/upload/v1675516848/mask.webp");
+  mask-position: bottom !important;
+  mask-size: cover !important;
+  mask-repeat: no-repeat !important;
+
+}
+
+.site-title {
+  text-align: left;
+  font-size: clamp(4.5rem, 9vw + 0.5rem, 6rem);
+  {# font-size: 3.5em; #}
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-left: 2.2rem;
+  padding-top: 2.2rem;
+  position: fixed;
+  display: inline;
+  {# border: 2px solid #ED2B34; #}
+  display: inline-block;
+  width: 90%;
+  filter: drop-shadow(1px -2px 3px rgba(0, 0, 0, .5));
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #ED2B34;
+}
+
+.site-title-smaller {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1;
+  padding-left: 1.2rem;
+  position: fixed;
+  width: 100%;
+  transform: translateY(7.5rem);
+   {# border: 2px solid #ED2B34; #}
+  display: inline-block;
+  width: 90%;
+}
+</style>
