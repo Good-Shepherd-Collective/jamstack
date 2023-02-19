@@ -1,0 +1,107 @@
+
+   <section class="test-background">
+      <div class="title-section">
+         <div class="left-hero">
+         <h1 class="arial">We will remain</h1>
+         </div>
+      </div>
+      <div class="c-sections right-hero">
+        <div><h1 class=" content-section">We will remain</h1></div>
+         <div class="content-section">In Lidda, in Ramla, in the Galilee,<br>
+we shall remain<br>
+like a wall upon your chest,<br>
+and in your throat<br>
+like a shard of glass,<br>
+a cactus thorn, and in your eyes<br>
+a sandstorm.</div>
+         <div class="content-section">We shall remain<br>
+            a wall upon your chest,<br>
+            clean dishes in your restaurants,<br>
+            serve drinks in your bars,<br>
+            sweep the floors of your kitchens<br>
+            to snatch a bite for our children<br>
+            from your blue fangs.<br></div>
+         <div class="content-section">Here we shall stay,<br>
+          sing our songs,<br>
+          take to the angry streets,<br>
+          fill prisons with dignity.<br>
+         </div>
+         <div class="content-section">
+          In Lidda, in Ramla, in the Galilee,<br>
+we shall remain,<br>
+guard the shade of the fig<br>
+and olive trees,<br>
+ferment rebellion in our children<br>
+as yeast in the dough.<br>
+         </div>
+        </div>
+  </section>
+ 
+
+
+ <style>
+
+  .left-hero {
+    display: grid;
+    grid-area: left;
+    align-items: start;
+  }
+
+  .right-hero {
+    display: grid;
+    grid-area: right;
+    
+  }
+
+.title-section {
+ height: 100vh;
+ width: 100%;
+ display: grid;
+ grid-template-areas: "left right"
+ /* flex-direction: column; */
+ align-items: start !important;
+ justify-content: center;
+}
+
+.title-section {
+ display: grid;
+ /* place-content: center; */
+ gap: 12px;
+ position: sticky;
+ top: 0;
+}
+
+.content-section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-position: center;
+  font-size: 1.3em;
+  color: white;
+  font-family: sans-serif;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.test-background{
+  background-image: url(https://res.cloudinary.com/abualex/image/upload/v1676623561/hero-image.avif);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover; 
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+.arial{
+   font-weight: 700;
+   font-size: 4.5rem;
+   padding-top: 1em;
+   padding-left: .5rem;
+   color: aliceblue;
+   filter: drop-shadow(0 0 0.25rem #000);
+   text-decoration: underline;
+   text-decoration-color: crimson;
+}
+
+ </style>
