@@ -15,9 +15,6 @@ After 15 minutes I followed behind him, along with the water and coffee, and an 
 
 As we worked, approximately one hundred meters away a Palestinian shepherd grazed his sheep. When I looked up at some point, glancing up at him, I suddenly noticed two settlers coming toward us from Ma’on with sticks in their hands. As they approached, they began throwing stones at the nearby shepherd, frightening him and causing him to run away. Meanwhile, my father, our friend and I stood there watching everything from our garden. 
 
-Advertisement
-Mondoweiss is now on MEANS TV!
-
 My father’s sheep were far away from us, so my father told me to go to bring them back to protect them. As I went, I noticed a car with three settlers inside approaching my father in addition to the two settlers on foot. I could see that at least one of them had a gun.
 
 I felt a pang of fear for my father, worried that the settlers would attack him next. The next time I looked back, the two settlers who had chased the shepherd away had almost reached my father. I immediately turned around and ran to him, beginning to shout as I saw the settlers begin to strike my father with their bats. 
@@ -40,8 +37,6 @@ I always listen to my father. Throughout my life, he has shown me how to resist 
 
 While I waited at home, slowly the news began to pour in. The Israeli police and military forces had arrived and prevented my father from being taken to the hospital immediately by the Palestinian ambulance that arrived. In support of this, the settlers slashed the ambulance’s tires, preventing the first responders from leaving with or without my father. 
 
-
-A POSTER CALLING FOR THE RELEASE OF HAFEZ HURAINI IS BEING CIRCULATED ON SOCIAL MEDIA. (PHOTO: TWITTER)
 Israeli police then said that my father was under arrest. They brought an Israeli ambulance instead, and took my father, alone and with broken hands, to Soroka hospital in Beer as Seba’ on the other side of the wall. 
 
 The soldiers and police also arrested two Palestinian people for no reason other than that they came to my father’s aid. After this, they kicked all of the Palestinians out of our land on the hill, throwing sound bombs and tear gas directly toward them and announcing that it was a closed military zone. According to this announcement, no one, including Israeli settlers, should remain in the area for 24 hours. Despite this, as they used violence to drive all Palestinians down the hill and into at-Tuwani, the military allowed settlers to stay in the area and destroy the trees in the garden we had been working just a short while before.
@@ -55,7 +50,6 @@ With nothing to do but try to protect ourselves, I began frantically looking for
 After an hour of raiding and attacking my village — literally throwing bombs at people who had already been chased into their houses — the Israeli forces seemed to leave the village, but gathered at the main entrance to stop any movement in or out of the village. 
 
 By 2:30 am, the army returned to the village, this time forcing residents back inside by throwing sound bombs onto our front doors. They came to my house and detained around 15 people. The rest of us, exhausted but kept awake by the uncertainty of what might come next, sat together. 
-
 
 We made it through the night somehow, and as  the sun began to rise we called our lawyer to see what would happen with my father. She told us that he had been moved from the hospital to interrogation and would remain in jail at least until his first court date on Thursday. 
 
