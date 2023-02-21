@@ -16,6 +16,91 @@ layout: 'base.njk'
     
     </div>
 </article>
+<script>
+    // Set the number of paragraphs from the top of the page
+// after which the email sign-up form should appear
+const PARAGRAPH_OFFSET = 3;
+
+// Create the email sign-up form HTML
+const formHTML = `
+    <div class="visit">
+  <form action="/.netlify/functions/subscribe" method="post">
+<img class="about-logo" src="https://res.cloudinary.com/abualex/image/upload/v1676121425/yos-white-logo.svg" >
+<h1>Join our mailing list</h1>
+<p>As social media networks continue to <span class="underlined">silence critical Palestinian</span> voices, signing up to our emails represent one way you can ensure you're staying connected to the voices on the ground.</p>
+      <div class="input">
+        <input required type="text" class="button" id="name" name="name" placeholder="Name">
+      </div>
+      <div class="input">
+        <input required type="text" class="button" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="input .btn-white">
+        <input type="submit" class="button" id="submit" value="SIGN UP">
+      </div>
+    </form>
+    </div>
+`;
+
+// Select the paragraph element after which the form should be inserted
+const paragraph = document.querySelector(`main p:nth-of-type(${PARAGRAPH_OFFSET})`);
+
+// Insert the email sign-up form HTML after the selected paragraph
+paragraph.insertAdjacentHTML('afterend', formHTML);
+
+</script>
+
+<style>
+  .about-logo{
+    box-shadow: none;
+    width: 5rem;
+  }
+  .visit{
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    box-shadow: 0 0 0 100vmax var(--clr-neutral-900);
+    clip-path: inset(0 -100vmax);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+    }
+
+    .visit input{
+      border: .75px solid var(--clr-neutral-100);
+      border-radius: 0.25em;
+      background-color: var(--clr-neutral-100);
+      font-size: .8rem;
+      margin: 5px;
+      display: flex;
+      padding: .35rem 1.25rem;
+    }
+
+.input input[type="submit"] {
+  text-align: center;
+}
+
+.visit h1, p{
+  margin-bottom: 2.35rem;
+}
+ 
+.about-logo{
+  margin-bottom: 2rem;
+}
+
+ .btn-white{
+  color: var(--clr-neutral-900);
+  border: 0.75px solid var(--clr-neutral-100);
+  border-radius: 0.25em;
+  background-color: var(--clr-neutral-100);
+  font-size: .8rem;
+  margin: 5px;
+  padding: 0.35rem 1.25rem;
+  text-decoration: none;
+  }
+</style>
     
 
     
