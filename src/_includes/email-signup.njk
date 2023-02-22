@@ -14,7 +14,7 @@
         <input required type="text" class="button" id="email" name="email" placeholder="Email">
       </div>
       <div class="input" style="padding: 0;">
-        <input style="border-radius: .25em;" type="submit" class="button" id="submit" value="SIGN UP">
+        <input type="submit" id="submit" value="SIGN UP">
       </div>
     </form>
   </div>
@@ -51,9 +51,15 @@
     }
 
 .input input[type="submit"] {
-  text-align: center;
-  border-radius: 0.25em !important;
-  padding: .35rem 1.25rem;
+  all: unset;
+  border: .75px solid var(--clr-neutral-100);
+      border-radius: 0.25em !important;
+      background-color: var(--clr-neutral-100);
+      font-size: .8rem;
+      margin: 5px;
+      display: flex;
+      padding: .35rem 1.25rem;
+      color: var(--clr-neutral-900);
 }
 
 .visit h1, p{
