@@ -33,6 +33,10 @@
           </path>
         </svg></a></div>
     </div>
+    <div>
+      <p class="footer-text"><br><span id="bold-footer">Twitter Role</span><a href="https://twitter.com/HurainiSami">@HurainiSami</a><br><a href="https://twitter.com/Ali_awad1998">@Ali_awad1998</a><br><a href="https://www.facebook.com/malik.789456123">@malik.789456123</a></p>
+
+    </div>
   </div>
 
 
@@ -45,8 +49,19 @@
 
   <div class="grid-item-4">
 
-    <div>
-      <p id="bold-footer" class="footer-text">Got an email?</p><p class="footer-text"><a href="mailto:youthofsumud@gmail.com?subject=Reaching%20out">Contact us at YouthofSumud@gmail.com</a> </p>
+    <div class="footer-form">
+      <form action="/.netlify/functions/subscribe" method="post">
+      <p id="bold-footer" class="footer-text">Join our mailing list</p>
+      <div class="input">
+        <input required type="text" class="button" id="name" name="name" placeholder="Name">
+      </div>
+      <div class="input">
+        <input required type="text" class="button" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="input" style="padding: 0;">
+        <input type="submit" id="submit" value="SIGN UP">
+      </div>
+    </form>
     </div>
   </div>
 
@@ -220,5 +235,29 @@
     display: block;
   }
 }
+    .footer-form{
+      color: var(--clr-primary-200);
+    }
+    .footer-form input{
+      border: .75px solid var(--clr-neutral-100);
+      border-radius: 0.25em !important;
+      background-color: var(--clr-neutral-100);
+      font-size: .65rem;
+      margin: 5px;
+      display: flex;
+      padding: .25rem 1rem;
+      color: var(--clr-neutral-900);
+    }
 
+.input input[type="submit"] {
+  all: unset;
+  border: .75px solid var(--clr-neutral-100);
+      border-radius: 0.25em !important;
+      background-color: var(--clr-neutral-100);
+      font-size: .65rem;
+      margin: 5px;
+      display: flex;
+      padding: .25rem 1rem;
+      color: var(--clr-neutral-900);
+}
 </style>
