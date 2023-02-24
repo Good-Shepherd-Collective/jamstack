@@ -10,42 +10,7 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="container">
-      <div class="page-header__content">
-        <div>
-          <img src="https://res.cloudinary.com/abualex/image/upload/v1676121710/yos-all-black.svg" class="logo" width="35px" height="14px" alt="Youth of Sumud Logo">
-        </div>
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-          </button>
-          <nav>
-            <ul id="primary-navigation" data-visible="false" role="list" class="nav-list flex-group primary-navigation">
-              <li>
-                <a href="/">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/blog/">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="/about/">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/contact/">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-      </div>
-    </div>
-  </header>
+  
 
     {% include 'header.njk' %}
     <main>
@@ -53,6 +18,7 @@
     </main>
     {% include 'footer.njk' %}
     </div>
+    
     <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
