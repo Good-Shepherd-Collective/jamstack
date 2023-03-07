@@ -16,7 +16,7 @@
         <div class="profile-block middle-activist-profile">
           <img src="https://res.cloudinary.com/abualex/image/upload/f_auto,q_auto:eco/v1678100752/olive-trees.webp">
           <h3>olive trees</h3>
-          <p>Ali Awad</p>
+          <p>Our olive tree planting program helps ensure Palestinian families stay on their ancestral lands.</p>
           <div>
             <a href="#" class="gsc-button">MORE</a>
           </div>
@@ -34,22 +34,50 @@
       </div>
 
       <div>
-          <p class="quote">
-            "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="underlined">Sami Huraini</span>
-          </p>
+          <div class="quote-box">
+            <img class="quote-left quote-box-img" src="https://res.cloudinary.com/abualex/image/upload/v1676386696/sami-mug.webp" alt="Sami Huraini">
+            <p class="quote quote-right">
+              "When the boot of the oppressor is on the neck of the people, we are called to be in solidarity on the ground."<br><br>&mdash;  <span class="underlined">Sami Huraini</span>
+            </p>
+          </div>
       </div>   
 </div>
 <style>
   
 
+  .quote-box{
+    display: grid;
+    grid-template-areas: 
+      "left right";
+    margin-top: 1.5rem;
+  }
 
+  .quote-box-img{
+    height: 5.5rem !important;
+    display: inline-block;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover;
+  }
+
+  .quote-left{
+    grid-area: left;
+    align-self: center;
+    justify-self: center;
+    margin-right: 1.5rem;
+  }
+
+  .quote-right{
+    grid-area: right;
+    align-self: center;
+    justify-self: center;
+  }
   .activist-profile-grid{
     display: grid;
     grid-template-areas: 
       "left middle right";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: .5rem;
+    grid-gap: 2.5rem;
   }
 
   .left-activist-profile{
@@ -75,10 +103,11 @@
   }
   
   .activists img{
-    height: 10rem;
+    width: 100%;
     display: inline-block;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover;
+    margin-bottom: 1.35rem;
   }
 
   .quote{
@@ -93,9 +122,10 @@
     line-height: .75rem;
     font-weight: 500;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     .activist-profile-grid{
       grid-template-areas: 
         "left"
@@ -110,6 +140,7 @@
       width: 100%;
       aspect-ratio: 1 / 1 !important;
       height: auto;
+      
     }
   }
     
