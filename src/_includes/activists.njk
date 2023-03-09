@@ -61,15 +61,13 @@
 
   .quote-left{
     grid-area: left;
-    align-self: center;
-    justify-self: center;
+    align-self: start;
     margin-right: 1.5rem;
   }
 
   .quote-right{
     grid-area: right;
     align-self: start;
-    justify-self: center;
   }
   .activist-profile-grid{
     display: grid;
@@ -78,6 +76,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 2.5rem;
+    align-content: start;
   }
 
   .left-activist-profile{
@@ -114,7 +113,6 @@
       background-image: url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote-right.svg"), url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote.svg");
       background-repeat: no-repeat;
       background-position: right 5% bottom 95%, left 0% top 5%;
-      margin-top: 2rem;
       height: 50%;
     }
 
@@ -148,7 +146,6 @@
       background-image: url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote-right.svg"), url("https://res.cloudinary.com/abualex/image/upload/v1676366459/quote.svg");
       background-repeat: no-repeat;
       background-position: right 5% bottom 95%, left 0% top 5%;
-      margin-top: 2rem;
       height: 30%;
     }
   }
