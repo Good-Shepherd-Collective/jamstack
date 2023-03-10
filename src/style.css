@@ -175,7 +175,7 @@ section,
 }
 
 .container--narrow {
-  max-width: 65rem;
+  max-width: 42rem;
 }
 
 .flex-group {
@@ -462,4 +462,8 @@ color: var(--clr-neutral-900);
   border: solid 2px #ff0000;
   border-color: #ff0000 transparent transparent transparent;
   border-radius: 10%;
+}
+
+.external_blog img{
+  aspect-ratio: 1 / 1;
 }
