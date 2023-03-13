@@ -336,7 +336,7 @@ section,
 }
 .snippet__meta {
   /* grid-area: meta; */
-  color: var(--clr-neutral-300);
+  color: inherit;
   margin-top: 1rem;
 }
 
