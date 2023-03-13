@@ -1,42 +1,56 @@
-<div class="container-hero">
-  <div class="background-image-hero">
-    <h1 class="site-title">We will remain</h1>
-  </div>
-</div>
-
 <style>
   .site-title {
-  text-align: left;
-  font-size: clamp(2.5rem, 10vw + 0.5rem, 12rem);
-  {# font-size: 3.5em; #}
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-  padding-left: 10%;
-  padding-top: 15%;
-  display: inline;
-  {# border: 2px solid #ED2B34; #}
-  display: inline-block;
-  width: 90%;
-  filter: drop-shadow(1px -2px 3px rgba(0, 0, 0, .5));
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: #ED2B34;
-}
+    text-align: left;
+    font-size: clamp(2.5rem, 10vw + 0.5rem, 12rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-top: 15%;
+    display: inline;
+    display: inline-block;
+    width: 90%;
+    filter: drop-shadow(1px -2px 3px rgba(0, 0, 0, .5));
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #ED2B34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 
-.container-hero {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-}
+  .container-hero {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
 
-.background-image-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://res.cloudinary.com/abualex/image/upload/v1678112840/background-front.webp');
-  background-size: cover;
-}
+  .background-image-hero {
+    position: absolute;
+    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 </style>
+
+
+<div class="container-hero">
+  <picture class="background-image-hero">
+    <source 
+      type="image/webp"
+      srcset="https://res.cloudinary.com/abualex/image/upload/f_auto/v1678112840/background-front.webp" />
+    <img 
+      src="https://res.cloudinary.com/abualex/image/upload/f_auto/v1678112840/background-front.webp"
+      srcset="https://res.cloudinary.com/abualex/image/upload/f_auto/v1678112840/background-front.webp 800w"
+      sizes="(max-width: 800px) 100vw, 50vw"
+      style="width: 100%; aspect-ratio: 16/9"
+      fetchpriority="high"
+      alt="Youth of Sumud"
+    />
+  </picture>
+  <h1 class="site-title">We will remain</h1>
+</div>
